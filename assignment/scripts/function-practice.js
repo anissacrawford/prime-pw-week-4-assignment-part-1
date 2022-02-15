@@ -18,8 +18,9 @@ function helloName(name) {
   return name;
 }
 // Remember to call the function to test
-console.log('Hello,', helloName('Jo'));
-console.log('Hello,', helloName('Stacy'));
+console.log('Hello,' + " " + helloName('Jo'));
+console.log('Hello,' + " " + helloName('Stacy')); //changed comma to a +
+
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
@@ -65,7 +66,7 @@ function getLast() {
   if (numbers){
   return numbers[numbers.length - 1] ;
 } if (numbers.length === 0 ){
-  return undefined; //how do i know if this is undefined because i want it to be or because its not working lol
+  return undefined;
 }
  }
 
